@@ -7,7 +7,7 @@ import { ContentItem } from '@/components/content-item';
 import './index.scss';
 
 export default async function Home() {
-  const dataRes = await fetch(`${env.NEXT_PUBLIC_URL}/api/data`);
+  const dataRes = await fetch(`${env.NEXT_PUBLIC_URL || `https://${env.NEXT_PUBLIC_VERCEL_URL}`}/api/data`);
   const { user, content, userSocialPlatform } = (await dataRes.json()) as PageData;
 
   const socialPlatforms = userSocialPlatform.reduce((acc, { socialPlatform: platformId, link }) => {

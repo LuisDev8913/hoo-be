@@ -1,4 +1,4 @@
-import { Content } from '@/app/api/data/type';
+import type { Content } from '@/app/api/data/type';
 import { PhotoLink } from './photo-link';
 import { EmbeddedContentItem } from './embedded';
 import './index.scss';

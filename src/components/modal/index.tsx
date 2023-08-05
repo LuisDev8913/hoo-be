@@ -15,3 +15,5 @@ export const Modal = forwardRef<HTMLDialogElement, ModalProps>(({ close, childre
     </button>
   </dialog>
 ));
+
+Modal.displayName = 'Modal';

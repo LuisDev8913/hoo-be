@@ -11,7 +11,7 @@ interface PhotoLinkProps {
 
 export const PhotoLink: React.FC<PhotoLinkProps> = ({ title, link, imgSrc }) => (
   <a href={link} target='_blank' rel='noreferrer' className='photo-link'>
-    <Image src={imgSrc || DefaultContentImage} alt={title} />
+    <Image src={imgSrc ?? DefaultContentImage} alt={title} />
 
     <div className='content-block'>
       <span>{title}</span>

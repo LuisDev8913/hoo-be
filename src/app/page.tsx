@@ -1,5 +1,5 @@
 import { env } from '@/env.mjs';
-import { SOCIAL_PLATFORM_IDS_MAP, type PageData, SocialPlatform } from './api/data/type';
+import { SOCIAL_PLATFORM_IDS_MAP, type PageData, type SocialPlatform } from './api/data/type';
 import { SocialItem } from '@/components/social-item';
 import AvatarImage from '@/assets/images/hoobe-icon.png';
 import Image from 'next/image';

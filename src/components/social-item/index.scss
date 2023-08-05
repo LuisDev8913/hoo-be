@@ -1,0 +1,26 @@
+@use '@/styling/variables' as *;
+
+.social-item {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #000;
+  color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  user-select: none;
+  transition: transform 0.2s ease-in-out;
+
+  outline: none;
+
+  &:hover, &:focus-visible {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

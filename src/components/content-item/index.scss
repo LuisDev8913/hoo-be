@@ -1,0 +1,9 @@
+.content-item {
+  --n: 1;
+
+  width: 100%;
+
+  & > * {
+    animation-delay: calc(0.2s * var(--n));
+  }
+}

@@ -1,0 +1,18 @@
+$body-bg: #f3f3f3;
+$primary: #78c4cb;
+$primary-light: #ade1e6;
+$primary-dark: #1096a5;
+$text-primary: #000;
+$text-secondary: #848484;
+$text-tertiary: #aaa;
+
+$text-xs: 0.75rem;
+$text-sm: 0.875rem;
+$text-base: 1rem;
+$text-lg: 1.375rem;
+
+:export {
+  bodyBg: $body-bg;
+  primary: $primary;
+  primaryDark: $primary-dark;
+}

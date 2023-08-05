@@ -1,0 +1,47 @@
+@use 'screens' as *;
+@use 'variables' as *;
+@use 'animations';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+body {
+  font-size: $text-base;
+  color: $text-primary;
+  background: white;
+  min-height: 100lvh;
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    background: $body-bg;
+  }
+}
+
+a {
+  color: $primary;
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,41 @@
+@use '@/styling/variables' as *;
+@use '@/styling/screens' as *;
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.125rem;
+  margin-top: auto;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+
+  @include md {
+    padding-bottom: 4rem;
+  }
+
+  .login-link {
+    color: $text-secondary;
+    font-weight: 600;
+    font-size: $text-sm;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+}
+
+.sign-up-modal {
+  height: 33.6rem;
+  
+  .heading {
+    display: block;
+    text-align: center;
+    font-size: $text-lg;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+}

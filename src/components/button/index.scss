@@ -1,0 +1,36 @@
+@use '@/styling/variables' as *;
+
+.btn {
+  all: unset;
+
+  display: inline-flex;
+  align-items: center;
+  height: 2.5rem;
+  padding-inline: 1.875rem;
+  border-radius: 0.625rem;
+  transition: background-color 0.12s ease-in-out;
+
+  color: white;
+  font-size: $text-sm;
+  font-weight: 600;
+  background-color: $primary;
+
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $primary-dark;
+  }
+
+  &:active {
+    background-color: $primary-light;
+  }
+}
+
+.btn-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: white;
+  margin-right: 0.625rem;
+}

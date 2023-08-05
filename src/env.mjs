@@ -7,7 +7,7 @@ export const env = createEnv({
   },
 
   client: {
-    NEXT_PUBLIC_URL: z.string().url(),
+    NEXT_PUBLIC_URL: z.string().url().optional(),
     NEXT_PUBLIC_VERCEL_URL: z.string().url()
   },
 
